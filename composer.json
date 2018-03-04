@@ -1,0 +1,23 @@
+{
+    "name": "asbsoft/yii2module-params_1_180227",
+    "description": "Modules parameters manager",
+    "keywords": ["yii2"],
+    "type": "yii2-module",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Alexandr Belogolovsky",
+            "email": "ab2014box@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "yiisoft/yii2": "~2.0.12",
+        "asbsoft/yii2-common_2_170212": "~2.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "asb\\yii2\\modules\\params_1_180227\\": ""
+        }
+    }
+}
