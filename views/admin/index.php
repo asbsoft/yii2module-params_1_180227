@@ -34,7 +34,7 @@
     <h3><?= Html::encode($title) ?></h3>
 
     <div class="modules-list">
-        <?= Html::beginForm([''], 'get') ?>
+        <?= Html::beginForm(['', 'scalar' => $dataProvider->isScalar], 'get') ?>
             <div class="col-md-8">
                 <?= Html::dropDownList('muid', $module->uniqueId, $modulesList, [
                         'id' => 'module-uid',

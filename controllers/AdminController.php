@@ -43,11 +43,11 @@ class AdminController extends BaseAdminController
 
     /**
      * Lists all NewsTagitem models.
-     * @param string $muid module unique id
      * @param boolean $scalar show scalar parameters only
+     * @param string $muid module unique id
      * @return mixed
      */
-    public function actionIndex($muid = '', $scalar = false)
+    public function actionIndex($scalar = false, $muid = '')
     {
         $module = $this->module->getModuleByUniqueId($muid);
         $dataProvider = $this->module->model('ParamsDataProvider', [$module, $scalar, [
