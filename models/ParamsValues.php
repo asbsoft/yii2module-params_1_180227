@@ -192,8 +192,7 @@ class ParamsValues extends DataModel
                     break;
                 case 'float':
                 case 'double':
-                  //if (preg_match('|^\-?\d+\.?\d+$|', $value)) { // without exponent
-                    if (preg_match('|^\-?\d+\.?\d+(e[-+]?\d+)?$|i', $value)) {
+                    if (preg_match('|^[+-]?(\d*\.)?\d+(e[-+]?\d+)?$|i', $value)) {
                         if ($type === 'float') $value = (float)$value;
                         if ($type === 'double') $value = (double)$value;
                     } else {
