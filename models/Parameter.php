@@ -31,8 +31,6 @@ class Parameter extends BaseModel
     {
         parent::init();
 
-        $this->module = Module::getModuleByClassname(Module::className());
-
         $this->user = Yii::$app->user;
     }
     
